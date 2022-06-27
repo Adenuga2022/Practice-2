@@ -1,0 +1,186 @@
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: contain;
+    font-family:"red hat display", sans-serif;
+    /* max-width: 95%; */
+}
+main{
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 0;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+main > img{
+    border-radius: 15px 15px 0px 0px;
+    max-width: 100%;
+}
+#div1{
+    text-align: center;
+    padding: 30px;
+}
+h2{
+    font-weight: 800;
+    font-size: 1.55em;
+    margin-top: 0px;
+}
+p{
+    font-size: 16px;
+    color: rgb(102, 99, 99);
+}
+h3{
+    transform: scale(0.8);
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 10px 14px;
+    background-color: hsl(225, 57%, 95%);
+    position: relative;
+    margin: 20px 0px 30px 0px;
+    border-radius: 10px;
+}
+li:nth-child(2) > p , h3 {
+    line-height: 0;
+    padding: 0;
+}
+li:nth-child(1){
+    transform: scale(0.8);
+}
+li:nth-child(2){
+    max-width: 110px;
+    margin-top: -5px;
+    padding: 0;
+}
+li:nth-child(3){
+    position: absolute;
+    right: 4%;
+    top: 35%;
+}
+li > a {
+    font-weight: 600;
+    color: rgb(13, 13, 200);
+    font-size: 15px;
+}
+button{
+    display: block;
+    width: 100%;
+    border: 0;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.pay{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 13px;
+    box-shadow: 0px 5px 20px hsl(245, 33%, 71%);
+    /* margin-bottom: 0; */
+}
+.cancel{
+    background-color: aliceblue;
+    margin-top: 21px;
+    color: rgb(102, 99, 99);
+    /* padding-top: 0; */
+}
+.cancel:hover{
+    color: black;
+    cursor: pointer;
+}
+.pay:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+}
+a:hover{
+    color: blueviolet;
+}
+footer{
+    margin: auto;
+    max-width: max-content;
+}
+#span1{
+    border-right: 3px solid;
+    padding-right: 5px;
+}
+span > a {
+    font-weight: 800;
+}
+
+/* Media Queries */
+@media screen and (max-width:428px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    main{
+        margin: 20% 15px;
+    }
+    #div1 > p{
+        font-size: 1.18em;
+        line-height: 1.7;
+    }
+    h2{
+        font-weight: 800;
+        margin-bottom: -2px;
+        font-size: 28px;
+    }
+    ul{
+        padding: 15px 14px;
+        margin: 27px 0px 30px 0px;
+    }
+    li:nth-child(1){
+        transform: scale(1.2);
+        padding: 12px 10px 10px 10px;
+    }
+    h3{
+        transform: scale(0.9);
+        letter-spacing: -1px;
+        font-weight: bolder;
+    }
+    li:nth-child(2) > p , h3 {
+        line-height: 0.4;
+    }
+    li:nth-child(2){
+        margin: 0px 10px;
+    }
+    li>a{
+        font-size: 17px;
+        /* font-weight: 700; */
+    }
+    .pay{
+        padding: 18px;
+    }
+    .cancel{
+        margin-top: 25px;
+    }
+    footer{
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width:390px) {
+    main{
+        margin: 9% 10px;
+    }
+    li > *{
+        transform: scale(0.8);
+    }
+    li:nth-child(1){
+        padding-top: 10px;
+        margin-left: -10px;
+        align-self: center;
+    }
+    li:nth-child(2){
+        margin-left: -15px;
+        padding: 0;
+    }
+    li:nth-child(2) > p{
+        margin-top: -8px;
+    }
+    li:nth-child(3){
+        transform: scale(0.8);
+    }
+    h3{
+        transform: scale(0.7);
+    }
+}
