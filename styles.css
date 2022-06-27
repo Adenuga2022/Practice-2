@@ -4,7 +4,6 @@ body{
     background-color: hsl(225, 100%, 94%);
     background-size: contain;
     font-family:"red hat display", sans-serif;
-    /* max-width: 95%; */
 }
 main{
     max-width: 420px;
@@ -76,13 +75,11 @@ button{
     color: white;
     padding: 13px;
     box-shadow: 0px 5px 20px hsl(245, 33%, 71%);
-    /* margin-bottom: 0; */
 }
 .cancel{
     background-color: aliceblue;
     margin-top: 21px;
     color: rgb(102, 99, 99);
-    /* padding-top: 0; */
 }
 .cancel:hover{
     color: black;
@@ -145,7 +142,6 @@ span > a {
     }
     li>a{
         font-size: 17px;
-        /* font-weight: 700; */
     }
     .pay{
         padding: 18px;
